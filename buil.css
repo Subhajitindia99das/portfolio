@@ -1,0 +1,128 @@
+body {
+    background-color: #0acbcb6b;
+    overflow-x: hidden;
+}
+
+.navlist {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.container {
+    border: solid 2px black;
+    border-radius: 20px;
+    box-shadow: rgba(7, 7, 7, 0.39) 10px 10px 10px;
+    background-color: black;
+    color: wheat;
+    width: 100wh;
+    margin: auto;
+    
+}
+
+
+p{
+    color: aliceblue;
+}
+.divi2{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    list-style-type: none;
+    justify-content: space-between;
+    padding: 2rem;
+    font-size: larger;
+    letter-spacing: 3px;
+}
+
+.divi2 li {
+    font-size: 1.4rem;
+}
+
+
+.divi2 li:hover {
+    text-decoration: underline;
+    color:aqua;
+    cursor: pointer;
+}
+
+.divi1 {
+    align-items: center;
+}
+
+.divi1 h1 {
+    margin:auto 0px;
+}
+
+.content p{
+    width: 700px;
+    font-size: x-large;
+    margin: auto;
+}
+.content {
+    margin: auto;
+    padding: 2rem;
+}
+.text {
+    width: 70rem;
+    margin: auto;
+    display: flex;
+}
+p{
+    font-size: larger;
+}
+
+.imgs {
+    margin: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+i:hover {
+    box-shadow: 0 0 20px aqua;
+}
+
+button {
+    width: fit-content;
+    margin: 2rem auto auto auto;
+    cursor: pointer;
+}
+.but{
+    width: fit-content;
+    margin: 2rem auto auto auto;
+}
+.but:nth-child(1){
+    background-color: aqua;
+    color: rgb(69, 86, 102);
+    /* border:solid white 2px; */
+    transform: scale(1.1);
+}
+.but:nth-child(2){
+    color: aqua;
+    border: 2px solid rgb(135, 178, 214);
+}
+#icons:hover{
+    box-shadow: 0 0 8px 5px aqua;
+    border-radius: 360px;
+    border: aqua 1px;
+    transform: scale(1.2);
+    transition: all linear;
+}
+#element{
+    font-size: 3rem;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow:0 0 20px aqua;
+    }
+    50% {
+        box-shadow:0 0 60px aqua;
+    }
+    100% {
+        box-shadow:0 0 20px aqua;
+    }
+    
+}

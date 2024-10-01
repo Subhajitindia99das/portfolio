@@ -1,0 +1,54 @@
+
+
+
+.proj{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+.myp {
+    font-size: 5rem;
+    margin: auto;
+}
+.mypr {
+    font-size: x-large;
+    margin: auto;
+}
+
+.mypro {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.box1{
+    height: 26rem;
+    width: 18rem;
+    border: 2px solid aqua;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(rgb(124,117,117),rgb(55, 53, 53), black);
+}
+
+.box1 p{
+    margin: 1rem auto;
+    font-size: 50px;
+}
+.box1 button {
+    width: 10rem;
+    height: 3rem;
+    margin: 2rem auto auto auto;
+    cursor: pointer;
+    border-radius: 39px;
+    border: 3px solid aqua;
+    background: #5f8989;
+}
+
+.box1 button span {
+    color: black;
+    font-size: large;
+    font-weight: 700;
+}

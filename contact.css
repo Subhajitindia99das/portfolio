@@ -1,0 +1,86 @@
+.cont {
+    /* height: 845px; */
+    /* border-radius: 20px;
+    box-shadow: white 10px 10px 10px; */
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(img/forest.avif);
+    background-position: center;
+    background-size: cover;
+}
+
+.box-1 {
+    /* height: 200px; */
+    width: 55rem;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid white;
+    margin: 60px auto;
+    /* margin-top: 4rem; */
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    width: 52rem;
+}
+.row .input-grp{
+    flex-basis: 46%;
+}
+.input-grp{
+    margin-bottom: 30px;
+    position:relative;
+}
+label{
+    height: 100%;
+    width: 50rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    transition: 0.2s;
+    /* width: -webkit-fill-available; */
+}
+
+
+
+input,textarea{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    font-size: 15px;
+}
+textarea{
+    width: 50rem;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width:   -webkit-fill-available; */
+}
+/* #email{
+    width: -webkit-fill-available;
+} */
+
+input:focus~label, input:valid~label, textarea:focus~label,textarea:valid~label{
+    top: -35px;
+}
+
+form button {
+    display: flex;
+    width: 300px;
+    margin: 2rem auto auto auto;
+    cursor: pointer;
+    height: 50px;
+    border-radius: 20px;
+    box-shadow:0px 0px 20px #5fefef;
+    font-size: 20px;
+    background: #5fefef;
+    align-items: center;
+    justify-content: center;
+}

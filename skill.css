@@ -1,0 +1,56 @@
+.text2 p {
+    font-size: 5rem;
+    margin: 2vh;
+    margin-left: 7rem;
+    color: aqua;
+}
+
+
+/* .newbox {
+    width: 950px;
+    margin: 5rem auto;
+    border: 3px solid aqua;
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px 10px aqua;
+}
+
+.newbox1 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+
+} */
+
+.box {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.bo {
+    margin: auto;
+    display: flex;
+    /* margin: 20px auto; */
+}
+.bo1 {
+    height: 250px;
+    width: 250px;
+    border: 2px solid aqua;
+    box-shadow: 0 0 10px aqua;
+    margin: 10px ;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.log {
+    margin: auto;
+    height: 40px;
+    width: 200px;
+    border: 2px solid aqua;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
