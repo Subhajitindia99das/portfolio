@@ -46,9 +46,9 @@
 
 .log {
     margin: auto;
-    height: 40px;
-    width: 200px;
-    border: 2px solid aqua;
+    height: 70px;
+    width: 90px;
+    /* border: 2px solid aqua; */
     border-radius: 15px;
     display: flex;
     justify-content: center;

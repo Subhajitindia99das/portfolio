@@ -1,0 +1,582 @@
+/* Reset default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling with theme support */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212; /* Dark theme background */
+    color: #e0e0e0; /* Light text */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Light theme body */
+body.light-theme {
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #1e1e1e;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Light theme navbar */
+.light-theme .navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation brand */
+.nav-brand {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #00e6e6;
+}
+
+/* Navigation list */
+.navlist {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+/* Navigation links */
+.navlist li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+/* Light theme nav links */
+.light-theme .navlist li a {
+    color: #333;
+}
+
+/* Nav link hover */
+.navlist li a:hover {
+    color: #00e6e6;
+}
+
+/* Hamburger menu for mobile */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Hamburger lines */
+.hamburger span {
+    width: 20px;
+    height: 2px;
+    background: #e0e0e0;
+    transition: all 0.3s;
+}
+
+/* Light theme hamburger */
+.light-theme .hamburger span {
+    background: #333;
+}
+
+/* Hamburger active state */
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(4px, 4px);
+}
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(4px, -4px);
+}
+
+/* Theme toggle button */
+.theme-toggle button {
+    background: #00e6e6;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: #121212;
+}
+
+/* Section styling */
+.section {
+    padding: 2rem 1rem;
+}
+
+/* Content container */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Main heading */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #00e6e6;
+}
+
+/* Light theme heading */
+.light-theme h1 {
+    color: #007bff;
+}
+
+/* Tagline */
+.tagline {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+/* Tagline highlight */
+.tagline span {
+    color: #00e6e6;
+    font-weight: 600;
+}
+
+/* Light theme tagline */
+.light-theme .tagline span {
+    color: #007bff;
+}
+
+/* Intro text */
+.intro {
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 500px;
+    margin-bottom: 1.5rem;
+}
+
+/* Button container */
+.buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Button styling */
+.btn {
+    padding: 0.7rem 1.5rem;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+/* Primary button */
+.btn.primary {
+    background: #00e6e6;
+    color: #121212;
+}
+
+/* Secondary button */
+.btn.secondary {
+    background: transparent;
+    border: 2px solid #00e6e6;
+    color: #00e6e6;
+}
+
+/* Light theme buttons */
+.light-theme .btn.primary {
+    background: #007bff;
+    color: #ffffff;
+}
+.light-theme .btn.secondary {
+    border-color: #007bff;
+    color: #007bff;
+}
+
+/* Button hover */
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 230, 230, 0.5);
+}
+
+/* Section heading */
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #00e6e6;
+    border-bottom: 2px solid #00e6e6;
+}
+
+/* Light theme heading */
+.light-theme h2 {
+    color: #007bff;
+    border-color: #007bff;
+}
+
+/* Skills grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+/* Skill box */
+.skill-box {
+    background: #1e1e1e;
+    padding: 0.8rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: all 0.3s;
+    width: fit-content;
+}
+
+/* Light theme skill box */
+.light-theme .skill-box {
+    background: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Skill box hover */
+.skill-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 230, 230, 0.5);
+}
+
+/* Skill icon */
+.skill-box img {
+    width: 250px;
+    height: fit-content;
+    margin-bottom: 0.5rem;
+}
+
+/* Projects grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+/* Project box */
+.project-box {
+    background: #1e1e1e;
+    padding: 2rem;
+    border-radius: 10px;
+    border: 2px solid #00e6e6;
+    transition: all 0.3s;
+}
+
+/* Light theme project box */
+.light-theme .project-box {
+    background: #ffffff;
+    border-color: #007bff;
+}
+
+/* Project box hover */
+.project-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 230, 230, 0.5);
+}
+
+/* Project title */
+.project-box h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Project description */
+.project-box p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+/* Contact form */
+form {
+    max-width: 450px;
+    margin: 1.5rem auto;
+}
+
+/* Form row */
+.form-row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Input group */
+.input-group {
+    position: relative;
+    flex: 1;
+}
+
+/* Form inputs */
+input, textarea {
+    /* margin-top: 10px; */
+    width: 100%;
+    padding: 0.7rem;
+    border: 2px solid #00e6e6;
+    border-radius: 8px;
+    background: transparent;
+    color: #e0e0e0;
+    font-size: 0.9rem;
+}
+
+/* Light theme inputs */
+.light-theme input, .light-theme textarea {
+    border-color: #007bff;
+    color: #333;
+}
+
+/* Input focus */
+input:focus, textarea:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 230, 230, 0.5);
+}
+
+/* Floating labels */
+label {
+    position: absolute;
+    top: 0.7rem;
+    left: 0.7rem;
+    color: #e0e0e0;
+    transition: all 0.2s;
+}
+
+/* Light theme labels */
+.light-theme label {
+    color: #333;
+}
+
+/* Label animation */
+input:focus ~ label, input:valid ~ label,
+textarea:focus ~ label, textarea:valid ~ label {
+    top: -1.2rem;
+    font-size: 0.8rem;
+    color: #00e6e6;
+}
+
+/* Light theme label animation */
+.light-theme input:focus ~ label, .light-theme input:valid ~ label,
+.light-theme textarea:focus ~ label, .light-theme textarea:valid ~ label {
+    color: #007bff;
+}
+
+/* Textarea */
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* Social links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+/* Social link icons */
+.social-links a {
+    color: #00e6e6;
+    font-size: 1.3rem;
+    transition: all 0.3s;
+}
+
+/* Light theme social links */
+.light-theme .social-links a {
+    color: #007bff;
+}
+
+/* Social link hover */
+.social-links a:hover {
+    transform: scale(1.2);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #1e1e1e;
+    color: #e0e0e0;
+}
+
+/* Light theme footer */
+.light-theme footer {
+    background: #ffffff;
+    color: #333;
+}
+
+/* About section hero */
+.about-hero .about-content {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+/* Profile card */
+.profile-card {
+    background: #1e1e1e;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid #00e6e6;
+    transition: all 0.3s;
+}
+
+/* Light theme profile card */
+.light-theme .profile-card {
+    background: #ffffff;
+    border-color: #007bff;
+}
+
+/* Profile card hover */
+.profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 230, 230, 0.5);
+}
+
+/* Profile image */
+.profile-img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 2px solid #00e6e6;
+}
+
+/* About details */
+.about-details {
+    flex: 1;
+}
+
+/* About grid */
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+/* About item */
+.about-item {
+    background: #1e1e1e;
+    padding: 1rem;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+/* Light theme about item */
+.light-theme .about-item {
+    background: #ffffff;
+}
+
+/* About item hover */
+.about-item:hover {
+    transform: translateY(-3px);
+}
+
+/* About item title */
+.about-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* About item text */
+.about-item p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Mobile responsiveness (≤768px) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navlist {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding: 0.5rem 0;
+    }
+    .navlist.active {
+        display: flex;
+    }
+    .hamburger {
+        display: flex;
+        align-self: flex-end;
+    }
+    .theme-toggle {
+        align-self: flex-end;
+        margin-top: 0.5rem;
+    }
+    .form-row {
+        flex-direction: column;
+    }
+    .about-hero .about-content {
+        flex-direction: column;
+    }
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .tagline {
+        font-size: 1.4rem;
+    }
+}
+
+
+/* Small mobile (≤480px) */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 0.5rem;
+    }
+    h1 {
+        font-size: 1.6rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    }
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    form {
+        margin: 1rem 0.5rem;
+    }
+    input, textarea {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+    label {
+        top: 0.5rem;
+        left: 0.5rem;
+        font-size: 0.8rem;
+    }
+    input:focus ~ label, input:valid ~ label,
+    textarea:focus ~ label, textarea:valid ~ label {
+        top: -1rem;
+        font-size: 0.7rem;
+    }
+}
