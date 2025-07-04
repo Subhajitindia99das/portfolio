@@ -414,7 +414,7 @@ textarea:valid ~ label {
   margin-top: 1.5rem;
 }
 
-.social-links a {
+.social-links a{
   color: #00e6e6;
   font-size: 1.3rem;
   transition: all 0.3s;
@@ -494,9 +494,6 @@ footer {
   .tagline {
     font-size: 1.4rem;
   }
-  /* .skills-grid {
-  grid-template-columns: repeat(2, 1fr);
-  } */
 
 }
 

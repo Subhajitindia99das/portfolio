@@ -45,14 +45,18 @@ document.addEventListener('DOMContentLoaded', () => {
   ScrollReveal().reveal('.social-links', { origin: 'bottom' });
 
   // ===== Smooth Scroll =====
-  document.querySelectorAll('.navlist a').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      const targetId = this.getAttribute('href').substring(1);
-      const targetElement = document.getElementById(targetId);
-      if (targetElement) {
-        targetElement.scrollIntoView({ behavior: 'smooth' });
-      }
-    });
+  // Avoid duplicate eventListener for nav link scroll and close
+document.querySelectorAll('.navlist a').forEach(link => {
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+    hamburger.classList.remove('active');
+    navlist.classList.remove('active');
+    const targetId = this.getAttribute('href').substring(1);
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
   });
+});
+
 });
